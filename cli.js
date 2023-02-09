@@ -2,7 +2,7 @@
 
 import minimist from 'minimist';
 import moment from 'moment-timezone';
-import node_fetch from 'node-fetch';
+import fetch from 'node-fetch';
 
 let arg = minimist(process.argv.slice(2))
 
