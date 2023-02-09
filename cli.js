@@ -37,14 +37,14 @@ if (arg.j) {
     process.exit(0);
 }
 
-const days = args.d 
+const days = args.d; 
 
 if (days == 0) {
-  console.log("today.")
+  console.log("today.");
 } else if (days > 1) {
-  console.log("in " + days + " days.")
+  console.log("in " + days + " days.");
 } else {
-  console.log("tomorrow.")
+  console.log("tomorrow.");
 }
 
 if (data.daily.precipitation_hours[args.d] == 0) {
