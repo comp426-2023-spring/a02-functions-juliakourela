@@ -4,7 +4,7 @@ import minimist from 'minimist';
 import moment from 'moment-timezone';
 import fetch from 'node-fetch';
 
-let arg = minimist(process.argv.slice(2))
+let arg = minimist(process.argv.slice(2));
 
 if (arg.h) {
     console.log(`Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME_ZONE`)
@@ -49,7 +49,10 @@ if (arg.j) {
     process.exit(0);
 }
 
-const days = arg.d; 
+var days = 1;
+if (arg.d) {
+    days = arg.d; 
+}
 
 if (days == 0) {
   console.log("today.");
