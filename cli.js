@@ -4,7 +4,7 @@ import minimist from 'minimist';
 import moment_timezone from 'moment-timezone';
 import node_fetch from 'node-fetch';
 
-if (process.argv[1] && process.argv[1] === '-h') {
+if (process.argv[2] && process.argv[2] === '-h') {
     console.log(`Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME_ZONE`)
     console.log(`    -h            Show this help message and exit.`)
     console.log(`    -n, -s        Latitude: N positive; S negative.`)
