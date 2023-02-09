@@ -50,7 +50,7 @@ if (arg.j) {
 }
 
 var days = 1;
-if (arg.d) {
+if (arg.d || arg.d === 0) {
     days = arg.d; 
 }
 
