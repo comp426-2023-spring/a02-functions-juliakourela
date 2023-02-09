@@ -17,17 +17,22 @@ if (arg.h) {
     process.exit(0)
 }
 
-const timezone = moment.tz.guess()
-var latitude = 0;
-var longitude = 0;
+const timezone = moment.tz.guess();
+if (arg.z) timezone = arg.z;
 
+var latitude = 0;
 if (arg.s && !(arg.n)) latitude = parseFloat(arg.s) * -1;
 else latitude = parseFloat(arg.n);
 
+var longitude = 0;
 if (arg.w && !(arg.e)) longitude = parseFloat(arg.w) * -1;
 else longitude = parseFloat(arg.e);
 
-if (arg.z) timezone = arg.z;
-
 // Make a request
-const response = await fetch('');
+const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&timezone' + timezone + '&daily=precipitation_hours');
+const data = await response.json();
+
+if (arg.j) {
+    console.log(data);
+    process.exit(0);
+}
