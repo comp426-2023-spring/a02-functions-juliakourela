@@ -1,0 +1,19 @@
+{
+  "name": "julias_pkg",
+  "version": "1.0.0",
+  "description": "Julia Kourelakos' package for COMP 426 assignment a02",
+  "main": "index.js",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a02-functions-juliakourela.git"
+  },
+  "author": "@juliakourela",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a02-functions-juliakourela/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-juliakourela#readme"
+}
