@@ -49,10 +49,7 @@ if (arg.j) {
     process.exit(0);
 }
 
-var days = 1;
-if (arg.d) {
-    days = arg.d; 
-}
+days = arg.d; 
 
 if (days == 0) {
   console.log("today.");
