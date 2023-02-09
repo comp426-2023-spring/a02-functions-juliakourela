@@ -25,18 +25,18 @@ if (arg.z) {
 
 var latitude = 0;
 if (arg.s && !(arg.n)) {
-    latitude = arg.s * -1;
+    latitude = parseFloat(arg.s) * -1;
 } 
 else {
-    latitude = arg.n;
+    latitude = parseFloat(arg.n);
 }
 
 var longitude = 0;
 if (arg.w && !(arg.e)) {
-    longitude = arg.w * -1;
+    longitude = parseFloat(arg.w) * -1;
 }
 else {
-    longitude = arg.e;
+    longitude = parseFloat(arg.e);
 }
     
 
