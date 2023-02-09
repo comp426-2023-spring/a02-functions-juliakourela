@@ -59,7 +59,7 @@ if (days == 0) {
   console.log("tomorrow.");
 }
 
-if (data.daily.precipitation_hours[args.d] == 0) {
+if (data.daily.precipitation_hours[arg.d] == 0) {
     console.log("You will not need your galoshes " + days);
 }
 else {
